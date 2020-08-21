@@ -1,21 +1,12 @@
 #import <SpriteKit/SpriteKit.h>
 #import <SpriteKit/SKView.h>
 
-%hook GameViewController
--(BOOL)clearsContextBeforeDrawing {
-     return false;
-}
--(BOOL)showsFPS {
+%hook PoolBall
+-(BOOL)isBlack {
      return true;
-}
--(BOOL)showsDrawCount {
-     return false;
-}
--(BOOL)showsNodeCount {
-     return false;
 }
 %end
 
 %ctor {
-    %init(GameViewController = objc_getClass("GameViewController.ViewController"));
+    %init(PoolBall = objc_getClass("PoolBall"));
 }
