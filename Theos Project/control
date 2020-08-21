@@ -1,0 +1,9 @@
+Package: com.rgx.gladden
+Name: Gladden
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: A Tweak for GamePigeon!
+Maintainer: RoyalGraphX
+Author: RoyalGraphX
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)

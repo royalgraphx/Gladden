@@ -1,0 +1,15 @@
+//
+//  MoPubSDK.xcconfig
+//
+//  Copyright 2018-2020 Twitter, Inc.
+//  Licensed under the MoPub SDK License Agreement
+//  http://www.mopub.com/legal/sdk-license-agreement/
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Valid Architectures
+VALID_ARCHS = arm64 arm64e armv7 armv7s i386 x86_64
+VALID_ARCHS[sdk=iphoneos*] = arm64 arm64e armv7 armv7s
+VALID_ARCHS[sdk=iphonesimulator*] = i386 x86_64
